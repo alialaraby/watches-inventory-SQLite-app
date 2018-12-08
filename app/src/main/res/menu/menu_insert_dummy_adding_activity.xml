@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.alisakralarabygmail.watchesinventory.AddingActivity">
+    <item
+        android:id="@+id/action_insert_random"
+        android:orderInCategory="100"
+        android:title="@string/action_insert_random_data"
+        app:showAsAction="never" />
+</menu>

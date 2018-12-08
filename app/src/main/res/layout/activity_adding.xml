@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".AddingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/add_item_image_view"
+                android:scaleType="fitXY"
+                android:src="@drawable/pick_mage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/add_edittext_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/add_item_name_edit_text"
+                    android:hint="product name"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/add_edittext_quantity"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/add_item_btn_minus"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/minus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <EditText
+                        android:id="@+id/add_item_quantity_edit_text"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:layout_centerInParent="true"
+                        android:textColor="@android:color/black"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <ImageButton
+                        android:id="@+id/add_item_btn_plus"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/plus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/add_edittext_type"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/add_item_type_spinner"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:spinnerMode="dropdown"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/add_edittext_price"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/add_item_price_edit_text"
+                    android:hint="product price"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/add_edittext_supplier_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/add_item_supplier_edit_text"
+                    android:hint="product supplier"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/add_edittext_supplier_website"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/add_item_supplier_website_edit_text"
+                    android:hint="supplier website"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/add_item_insert_button"
+        android:text="@string/add_button_insert"
+        android:layout_margin="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

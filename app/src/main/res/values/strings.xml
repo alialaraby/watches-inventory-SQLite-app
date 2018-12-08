@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Watches Inventory</string>
+    <string name="action_delete_all">Delete All Watches</string>
+    <string name="action_insert_random_data">insert dummy</string>
+    <string name="action_delete_current_item">delete watch</string>
+
+    <!-- strings for the adding activity edit texts -->
+    <string name="add_edittext_name">name</string>
+    <string name="add_edittext_quantity">quantity</string>
+    <string name="add_edittext_type">type</string>
+    <string name="add_edittext_price">price</string>
+    <string name="add_edittext_supplier_name">supplier</string>
+    <string name="add_edittext_supplier_website">supplier website</string>
+
+    <!-- strings for the addingActivity the order button -->
+    <string name="add_button_order">order</string>
+
+    <!-- strings for the addingActivity the insert button -->
+    <string name="add_button_insert">insert</string>
+
+    <!-- strings for the homeActivity the buy button -->
+    <string name="home_button_buy">buy</string>
+
+    <!-- strings for the the gender of the watches -->
+    <string name="gender_leather">Leather</string>
+    <string name="gender_stainless_steel">Stainless Steel</string>
+    <string name="gender_rubber">Rubber</string>
+    <string name="gender_unknown">Unknown</string>
+
+    <!-- string array for the spinner items -->
+    <string-array name="spinner_data">
+        <item>UNKNOWN</item>
+        <item>LEATHER</item>
+        <item>STAINLESS STEEL</item>
+        <item>RUBBER</item>
+    </string-array>
+</resources>
